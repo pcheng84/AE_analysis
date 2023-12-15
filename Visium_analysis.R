@@ -10,10 +10,10 @@ library(ggpubr)
 library(dittoSeq)
 library(ggsci)
 
-# Normal skin 2 (h20.19341) Skin rash 6 (h17.2699)
-img.skin <- readPNG("fgcz-gstore.uzh.ch/projects/p27184/o30936_SpaceRangerCount_2023-04-03--12-11-13/H20-19341_H19-8960_H17-2699_H17-28319/outs/spatial/tissue_hires_image.png")
-# colitis 1 (b17.24331) colon 1 (b18.114)
-img.col <- readPNG("fgcz-gstore.uzh.ch/projects/p27184/o30936_SpaceRangerCount_2023-04-03--12-11-13/B17-24331_B18-114/outs/spatial/tissue_hires_image.png")
+# Normal skin 2  Skin rash 6 
+img.skin <- readPNG("skin_hires_image.png")
+# colitis 1 colon 1 
+img.col <- readPNG("colon_hires_image.png")
 
 cell_cols <- pal_d3("category20")(11)
 names(cell_cols) <- c("Fibroblasts and immune cells",
